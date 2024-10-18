@@ -36,3 +36,163 @@
     transform: rotate(360deg);
   }
 }
+
+/* Загальні стилі для всього додатку */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.4;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Контейнер додатку */
+.container {
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Стилі для заголовку */
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+header p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Стилі для форми додавання завдань */
+.form-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-text {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-text::placeholder {
+  color: #888;
+}
+
+.input-submit {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #038203;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.input-submit:hover {
+  background-color: #026602;
+}
+
+/* Стилі для списку завдань */
+.todo-item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-item button {
+  background-color: #d35e0f;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.todo-item button:hover {
+  background-color: #a94400;
+}
+
+.todo-item span {
+  flex: 1;
+}
+
+/* Стиль для завершених завдань */
+.completed {
+  text-decoration: line-through;
+  color: #999;
+  opacity: 0.6;
+}
+
+/* Стилі для лічильника */
+.counter {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Додаткові стилі для завдань */
+.todo-item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-item button {
+  background-color: #d35e0f;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.todo-item button:hover {
+  background-color: #a94400;
+}
